@@ -37,6 +37,13 @@ int changeRelayS(String command)
         
         digitalWrite(pinNumberInt, HIGH);
         return pinNumberInt;
+    
+    } else if (relayCommand =="HARD/OFF") {
+        
+        digitalWrite(pinNumberInt, HIGH);
+        delay(5000);
+        digitalWrite(pinNumberInt, LOW);
+        return pinNumberInt;    
         
     } else if (relayCommand == "ON/OFF") {
       
